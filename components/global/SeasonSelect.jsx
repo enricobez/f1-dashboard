@@ -26,7 +26,7 @@ const SeasonSelect = ({ season, setSeason }) => {
 
         while (moreData) {
           const response = await fetch(
-            `https://ergast.com/api/f1/seasons.json?limit=${limit}&offset=${offset}`
+            `https://api.jolpi.ca/ergast/f1/seasons.json?limit=${limit}&offset=${offset}`
           );
           const data = await response.json();
           const newSeasons = data.MRData.SeasonTable.Seasons.map(

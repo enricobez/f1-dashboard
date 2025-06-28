@@ -1,6 +1,6 @@
 export default async function getConstructorStanding(constructorId) {
   return fetch(
-    `https://ergast.com/api/f1/constructors/${constructorId}/constructorStandings.json?limit=1000`
+    `https://api.jolpi.ca/ergast/f1/constructors/${constructorId}/constructorStandings.json?limit=1000`
   )
     .then((response) => {
       if (!response.ok) {

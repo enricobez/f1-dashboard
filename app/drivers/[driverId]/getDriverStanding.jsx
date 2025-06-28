@@ -1,6 +1,6 @@
 export default async function getDriverStanding(driverId) {
   return fetch(
-    `https://ergast.com/api/f1/drivers/${driverId}/driverStandings.json?limit=1000`
+    `https://api.jolpi.ca/ergast/f1/drivers/${driverId}/driverStandings.json?limit=1000`
   )
     .then((response) => {
       if (!response.ok) {

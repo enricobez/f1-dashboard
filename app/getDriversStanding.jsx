@@ -1,6 +1,6 @@
 export default async function getDriversStanding(season) {
   return fetch(
-    `https://ergast.com/api/f1/${season}/driverStandings.json?limit=1000`
+    `https://api.jolpi.ca/ergast/f1/${season}/driverStandings.json?limit=1000`
   )
     .then((response) => {
       if (!response.ok) {

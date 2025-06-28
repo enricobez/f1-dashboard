@@ -4,10 +4,10 @@ export default async function getDriver(season = null, driverId) {
   const response =
     season === null
       ? await fetch(
-          `https://ergast.com/api/f1/drivers/${driverId}.json?limit=1000`
+          `https://api.jolpi.ca/ergast/f1/drivers/${driverId}.json?limit=1000`
         )
       : await fetch(
-          `https://ergast.com/api/f1/${season}/drivers/${driverId}.json?limit=1000`
+          `https://api.jolpi.ca/ergast/f1/${season}/drivers/${driverId}.json?limit=1000`
         );
 
   if (!response.ok) {

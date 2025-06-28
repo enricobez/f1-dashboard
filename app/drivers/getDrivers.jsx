@@ -2,7 +2,7 @@ import fetchWikipediaInfo from "../../components/fetchWikipediaInfo";
 
 export default async function getDrivers(season) {
   const response = await fetch(
-    `https://ergast.com/api/f1/${season}/drivers.json?limit=1000`
+    `https://api.jolpi.ca/ergast/f1/${season}/drivers.json?limit=1000`
   );
   if (!response.ok) {
     throw new Error(response.statusText);

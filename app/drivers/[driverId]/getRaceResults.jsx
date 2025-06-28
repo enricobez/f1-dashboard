@@ -1,6 +1,6 @@
 export default async function getRaceResults(season, driverId) {
   const response = await fetch(
-    `https://ergast.com/api/f1/${season}/drivers/${driverId}/results.json?limit=1000`
+    `https://api.jolpi.ca/ergast/f1/${season}/drivers/${driverId}/results.json?limit=1000`
   );
   if (!response.ok) {
     throw new Error(response.statusText);

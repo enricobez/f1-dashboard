@@ -1,6 +1,6 @@
 export default async function getQualifyingResults(season, driverId) {
   const response = await fetch(
-    `https://ergast.com/api/f1/${season}/drivers/${driverId}/qualifying.json?limit=1000`
+    `https://api.jolpi.ca/ergast/f1/${season}/drivers/${driverId}/qualifying.json?limit=1000`
   );
   if (!response.ok) {
     throw new Error(response.statusText);

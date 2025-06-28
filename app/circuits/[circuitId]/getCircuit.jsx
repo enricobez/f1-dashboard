@@ -4,10 +4,10 @@ export default async function getCircuit(season = null, circuitId) {
   const response =
     season === null
       ? await fetch(
-          `https://ergast.com/api/f1/circuits/${circuitId}.json?limit=1000`
+          `https://api.jolpi.ca/ergast/f1/circuits/${circuitId}.json?limit=1000`
         )
       : await fetch(
-          `https://ergast.com/api/f1/${season}/circuits/${circuitId}.json?limit=1000`
+          `https://api.jolpi.ca/ergast/f1/${season}/circuits/${circuitId}.json?limit=1000`
         );
 
   if (!response.ok) {
